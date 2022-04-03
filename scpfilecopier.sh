@@ -9,7 +9,7 @@ do
 		sshpass -p ""${password}"" ssh -o StrictHostKeyChecking=no root@"${domain}" "bash -s" < internal_file_copier.sh >\
 		       	"${domain}.pub"
 		#sshpass -p ""${password}"" ssh -p "${SSH_PORT}" -o StrictHostKeyChecking=no root@"${domain}" "bash -s" < internal_file_copier.sh >\
-				"${domain}.pub"		
+		#		"${domain}.pub"		
 	done
 
 #Check if any empty files exist..
