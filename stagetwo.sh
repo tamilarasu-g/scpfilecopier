@@ -13,7 +13,7 @@ fi
 paste -d@ domain_name.txt password.txt | while IFS="@" read -r domain password
 do
 	#	echo "sshpass -p ""${password}"" ssh -o StrictHostKeyChecking=no root@"${domain}" ""bash -s"" < internal_file_copier.sh > ""${domain}"".pub"
-		sshpass -p ""${password}"" ssh -p "${DEFAULT_PORT}" -o StrictHostKeyChecking=no root@"${domain}" "bash -s" < client_script_runner.sh >>\
-		       	"stagethree.err"
+		sshpass -p ""${password}"" ssh -p "${DEFAULT_PORT}" -o StrictHostKeyChecking=no root@"${domain}" "bash -s" < support02.sh >>\
+		       	"stagetwo.err"
 					
 	done
