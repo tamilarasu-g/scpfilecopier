@@ -24,7 +24,6 @@ if [[ -f "${SCRIPT_PATH}" ]]
 then
     echo "Running the Script !!!" >> "${ERROR_PATH}"
     bash "${SCRIPT_PATH}" >> "${ERROR_PATH}"
-    cat "${ERROR_PATH}"
 else
     echo "SCRIPT files does not exist !!! " >> "${SCRIPT_PATH}"
 fi
@@ -33,7 +32,6 @@ if [[ -f "${DATABASE_PATH}" ]]
 then
     echo "Running the DATABASE Script !!!" >> "${ERROR_PATH}"
     bash "${DATABASE_PATH}" >> "${ERROR_PATH}"
-    cat "${ERROR_PATH}"
 else
     echo "DATABASE file does not exist"
 fi
