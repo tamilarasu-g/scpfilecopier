@@ -4,4 +4,4 @@
 
 HOSTNAME=$(hostname -s)
 
-cat /root/.ssh/id_rsa_"${HOSTNAME}"_backupclient
+cat /root/.ssh/id_rsa_"${HOSTNAME}"_backupclient.pub
